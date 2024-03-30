@@ -21,7 +21,7 @@
 //     const handleSubmit = async (e) => {
 //         e.preventDefault();
 //         try {
-//             const response = await axios.post('http://localhost:5000/api/login', formData);
+//             const response = await axios.post('https://news-app-backend-m5o0.onrender.com/api/login', formData);
 //             const token = response.data.token;
 //             document.cookie = `token=${token}; path=/; max-age=${60 * 60}; SameSite=Strict`;
 //             navigate('/');
@@ -84,7 +84,7 @@
 //     const handleSubmit = async (e) => {
 //         e.preventDefault();
 //         try {
-//             const response = await axios.post('http://localhost:5000/api/login', formData);
+//             const response = await axios.post('https://news-app-backend-m5o0.onrender.com/api/login', formData);
 //             const token = response.data.token;
 //             document.cookie = `token=${token}; path=/; max-age=${60 * 60}; SameSite=Strict`;
 //             console.log('Token:', token);
@@ -93,7 +93,7 @@
 //             axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
     
 //             // Now make the request to fetch user data
-//             const userResponse = await axios.get('http://localhost:5000/api/user');
+//             const userResponse = await axios.get('https://news-app-backend-m5o0.onrender.com/api/user');
 //             console.log('User response:', userResponse);
 //             const { role } = userResponse.data;
 //             if (role) {
@@ -164,7 +164,7 @@ const LoginPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/api/login', formData);
+            const response = await axios.post('https://news-app-backend-m5o0.onrender.com/api/login', formData);
             const token = response.data.token;
             document.cookie = `token=${token}; path=/; max-age=${60 * 60}; SameSite=Strict`;
             console.log('Token:', token);
@@ -173,7 +173,7 @@ const LoginPage = () => {
             axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
     
             // Now make the request to fetch user data
-            const userResponse = await axios.get('http://localhost:5000/api/user');
+            const userResponse = await axios.get('https://news-app-backend-m5o0.onrender.com/api/user');
             console.log('User response:', userResponse);
             const { role } = userResponse.data;
             if (role) {

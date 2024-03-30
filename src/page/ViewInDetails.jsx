@@ -11,7 +11,7 @@ const ImageWithDescription = () => {
     useEffect(() => {
         const fetchDataById = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/api/news/${id}`);
+                const response = await axios.get(`https://news-app-backend-m5o0.onrender.com/api/news/${id}`);
                 console.log('Fetched feed data by ID:', response.data); // Accessing data property
                 setFeedData(response.data); // Setting data to state
             } catch (error) {

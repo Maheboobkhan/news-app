@@ -23,7 +23,7 @@ const SignupPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:5000/api/signup', formData);
+            await axios.post('https://news-app-backend-m5o0.onrender.com/api/signup', formData);
             navigate('/');
             // Redirect or show success message
         } catch (error) {

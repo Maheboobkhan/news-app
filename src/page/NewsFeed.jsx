@@ -11,7 +11,7 @@
 
 //     const fetchData = async () => {
 //         try {
-//             const response = await axios.get('http://localhost:5000/api/news');
+//             const response = await axios.get('https://news-app-backend-m5o0.onrender.com/api/news');
 //             console.log('Fetched sport news:', response.data);
 //             setSportNews(response.data);
 //         } catch (error) {
@@ -21,7 +21,7 @@
 
 //     const handleDelete = async (id) => {
 //         try {
-//             await axios.delete(`http://localhost:5000/api/news/${id}`);
+//             await axios.delete(`https://news-app-backend-m5o0.onrender.com/api/news/${id}`);
 //             setSportNews(sportNews.filter(feed => feed._id !== id));
 //             setTimeout(() => {
 //                 alert('News deleted successfully');
@@ -81,7 +81,7 @@ const NewsFeedTable = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/api/news');
+            const response = await axios.get('https://news-app-backend-m5o0.onrender.com/api/news');
             console.log('Fetched sport news:', response.data);
             setSportNews(response.data);
         } catch (error) {
@@ -91,7 +91,7 @@ const NewsFeedTable = () => {
 
     const handleDelete = async (id) => {
         try {
-            await axios.delete(`http://localhost:5000/api/news/${id}`);
+            await axios.delete(`https://news-app-backend-m5o0.onrender.com/api/news/${id}`);
             setSportNews(sportNews.filter(feed => feed._id !== id));
             setTimeout(() => {
                 alert('News deleted successfully');
