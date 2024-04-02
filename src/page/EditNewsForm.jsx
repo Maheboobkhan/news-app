@@ -16,7 +16,7 @@ const EditNewsForm = () => {
     useEffect(() => {
         const fetchNewsData = async () => {
             try {
-                const response = await axios.get(`https://news-app-backend-m5o0.onrender.com/api/news/${id}`);
+                const response = await axios.get(`https://news-app-backend-lac.vercel.app/api/news/${id}`);
                 setFormData(response.data);
             } catch (error) {
                 console.error('Error fetching news data:', error);
@@ -37,7 +37,7 @@ const EditNewsForm = () => {
     const handleSubmit = async e => {
         e.preventDefault();
         try {
-            const response = await axios.put(`https://news-app-backend-m5o0.onrender.com/api/news/${id}`, formData);
+            const response = await axios.put(`https://news-app-backend-lac.vercel.app/api/news/${id}`, formData);
             console.log('Response:', response);
             if (response) {
                 alert('News updated successfully');

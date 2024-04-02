@@ -23,7 +23,7 @@ const AddNewsForm = () => {
     const handleSubmit = async e => {
         e.preventDefault();
         try {
-            const response = await fetch('https://news-app-backend-m5o0.onrender.com/api/news', { // Update the URL
+            const response = await fetch('https://news-app-backend-lac.vercel.app/api/news', { // Update the URL
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
