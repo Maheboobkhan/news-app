@@ -20,7 +20,7 @@ function Navbar() {
         <NavLink to="/form">Add News</NavLink>
       </div>
       <div className="flex items-center">
-        <NavLink to="/logout">Logout</NavLink>
+        <NavLink to="/">Logout</NavLink>
         <h1 className="h-8 w-8 font-bold pt-[3px] rounded-[50%] border border-white text-center ml-4" >S</h1>
       </div>
     </nav>
